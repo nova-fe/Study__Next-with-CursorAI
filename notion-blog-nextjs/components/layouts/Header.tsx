@@ -2,7 +2,7 @@ import Link from 'next/link'; // Link 를 사용하면 클라이언트에서 렌
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b">
+    <header className="bg-background sticky top-0 z-50 border-b">
       <div className="container mx-auto flex h-14 items-center px-4">
         <Link href="/" className="text-xl font-semibold">
           <span className="font-bold">Nova 블로그</span>
