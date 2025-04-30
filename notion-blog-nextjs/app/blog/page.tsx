@@ -1,6 +1,3 @@
-import Header from '@/components/layouts/Header';
-import Footer from '@/components/layouts/Footer';
-
 export default function Blog() {
   return (
     <div className="container py-8">

@@ -1,12 +1,23 @@
 {
-  "typescript.tsdk": "node_modules\\typescript\\lib",
-  // 파일 저장 시 모든 가능한 문제를 자동으로 수정하는 설정
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsserver.log": "verbose",
+  "typescript.reportStyleChecksAsWarnings": true,
+  "typescript.validate.enable": true,
+  "typescript.tsserver.watchOptions": {
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriorityPolling"
+  },
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit"
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
   "css.lint.unknownAtRules": "ignore",
-  "cSpell.enabled": false // 영어 맞춤법 검사 비활성화
+  "cSpell.enabled": false,
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.run": "onSave"
 }

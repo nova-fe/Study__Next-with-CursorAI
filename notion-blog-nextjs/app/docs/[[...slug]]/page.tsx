@@ -9,7 +9,7 @@ interface DocsPageProps {
 
 export default async function DocsPage({ params }: DocsPageProps) {
   const { slug } = await params;
-  console.log(slug); // 주소입력창에 docs/11/22/33 이라고 했을 경우, ['11', '22', '33] 문자열 배열로 반환
+  // console.log(slug); // 주소입력창에 docs/11/22/33 이라고 했을 경우, ['11', '22', '33] 문자열 배열로 반환
   // 1. /docs -> 메인 문서 페이지
   // 2. /docs/intro -> 단일 경로
   // 3. /docs/guide/basic -> 다중 경로
